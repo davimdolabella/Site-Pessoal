@@ -12,11 +12,12 @@ header{
     color: white;
     position: absolute;
     width: 100%;
-    padding: 10px 11%;
+    padding: 20px 11%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 header .desktop ul{
     display: flex;
     list-style: none;
@@ -26,7 +27,7 @@ header .desktop ul li{
 }
 header .desktop ul li:hover{
     background-color: rgba(255, 255, 255, 0.156);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 header .desktop ul li a{
     color: white;
@@ -34,13 +35,55 @@ header .desktop ul li a{
     cursor: pointer;
 }
 .menu_mobile_icon{
-    width: 50px;
-    height: 50px;
-    background-color: gray;
+    background-image:   url('../img/menu.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
     display: none;
+    cursor: pointer;
 }
 .mobile{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.285);
+    margin: 0 auto;
+    right: 10px;
+    top: 70px;
+    width: 100%;
+    max-width: 200px;
     display: none;
+}
+.mobile ul{
+    width: 100%;
+    list-style: none;
+    padding: 10px 20px;
+}
+.mobile li{
+    width: 100%;
+    margin: 0 auto;
+   
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile a{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.266);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile a:hover{
+    transform: scale(105%);
+    transition: 0.2s;
 }
 /*//////////////////////////////////////*/
 .hero .container{
@@ -63,7 +106,7 @@ header .desktop ul li a{
     border-radius: 30px;
     padding: 40px;
     font-size: 200%;
-    background-color: rgba(255, 255, 255, 0.219);
+    background-color: rgba(255, 255, 255, 0.212);
 }
 .hero_text h1{
     font-size: 130%;
@@ -73,9 +116,9 @@ header .desktop ul li a{
 }
 
 /***************************************/
+
 .about .container{
     background:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
-    
     padding:5% 10%;
     width: 100%;
     display: flex;
@@ -202,77 +245,122 @@ header .desktop ul li a{
 }
 /**************************/
 footer{
-    background-color: gray;
+    background:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
+    padding: 3% 10%;
+    color: rgb(230, 230, 230);
 }
 footer  .container{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.192);
+    padding: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 footer .social{
     display: flex;
     flex-direction: column;
     align-items: left;
+    gap: 20px;
+}
+.social .single{
+    transition: 0.2s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.single:hover{
+    transform: translateY(-3px) scale(102%);
+    transition: transform 0.2s ease;
+}
+.social h2{
+    font-weight: normal;
+}
+.social .icon{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url('../img/github.png');
+    background-size: cover;
+    background-color: rgb(206, 206, 206);
+}
+.social a{
+    text-decoration: none;
+    color: white;
 }
 /************************************/
-@media screen and (max-width: 1200px) {
-    
-    .hero_img{
-    }
-}
-@media screen and (max-width:1000px){
+@media screen and (max-width:1050px){
     .desktop{
         display: none;
     }
     .menu_mobile_icon{
         display: block;
     }
-    /************************/
-    .hero_img{
-    }
+    /*************************/
     .hero .container{
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
     }
-    .hero_text h2{
-    }   
-    .hero_text h1{
-    }
-    .hero_text h3{
-    }
-    /**************************/
-    .about .container{
-    }
-    .about_text h2{
-    }
-    .about_text p{
+    .hero_text{
+        position: relative;
+        bottom: 100px;
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        font-size: 110%;
+        text-align: center;
     }
     /****************************/
+    .about .container{
+        padding-top: 50px;
+        flex-direction: column;
+    }
+   /*****************************/
     .content .container{
+        flex-direction: column;
+        margin-top: 100px;
     }
     .content .content_single{
+        width: 100%;
+        max-width: 450px;
     }
-    /**************************/
-    .preview{
-    }
+    /******************************/
     .preview .container{
-    }
-    .p_hobbies .container{
-    }
-    /********************************/
-    footer  .container{
-    }
-    footer .social{
-    }
-}
-@media screen and (max-width:768px) {
-    .preview{
+        margin: 0 auto;
+        flex-direction: column;
+        max-width: 450px;
     }
     .preview .preview_c{
+        flex-direction: column; 
     }
     .p_hobbies .container{
+        flex-direction: column;
     }
-    /*******************/
-    footer{
+    .preview .single_p{
+        width: 180px;
+        height: 180px;
+    }
+    /*****************************/
+    footer .social{
+        justify-content: center;
+        align-items: center;
     }
     footer  .container{
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 50px;
+        max-width: 450px;
+        text-align: center;
+        align-items: center;
     }
 }
