@@ -12,7 +12,9 @@ header{
     color: white;
     position: absolute;
     width: 100%;
-    padding: 20px 11%;
+    height: 50px;
+   
+    padding: 40px 11%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +28,8 @@ header .desktop ul li{
     padding: 10px;
 }
 header .desktop ul li:hover{
-    background-color: rgba(255, 255, 255, 0.156);
+    background-color: rgba(255, 255, 255, 0.153);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     border-radius: 10px;
 }
 header .desktop ul li a{
@@ -47,7 +50,7 @@ header .desktop ul li a{
     border-radius: 20px;
     display: block;
     position: absolute;
-    background-image:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
+    background:linear-gradient(to right,  rgb(23, 38, 146), rgb(34, 68, 141));
     margin: 0 auto;
     right: 10px;
     top: 70px;
@@ -87,92 +90,98 @@ header .desktop ul li a{
     transition: 0.2s;
 }
 /***************************************************/
-.projetos{
-    background:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
-    padding: 5% 11%;
+.cruzeiro{
+   
+    background:linear-gradient(to right,  rgb(26, 43, 170), rgb(20, 66, 164));
+  
+    background-size: cover;
+    background-position: center;
 }
-.projetos .container{
-    color: white;
-    margin-top: 50px;
-    width: 100%;
-    gap: 50px;
+
+.cruzeiro .container{
+    padding:5% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 100px;
 }
-.container > h2{
-    font-size: 200%;
+
+.cruzeiro .container > h2{
+    transition: all 0.2s ease;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.153);
+    border-radius: 20px;
 }
-.container .single{
-    
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.cruzeiro .container > h2:hover{
+    transition: transform 0.2s ease;
+    transform: scale(104%);
+}
+.cruzeiro .container .single{
+    /* border: 1px solid rgb(224, 202, 59); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, rgba(228, 226, 226, 0.712), rgba(255, 255, 255, 0.627));
+    padding: 40px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.single .texto{
+    transition: transform 0.2s ease;
+    color: rgb(231, 230, 230);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    padding: 40px;
+    max-width: 500px;
+    width: 50%;
+    background-color: rgba(10, 0, 152, 0.841);
     border-radius: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.226);
-    padding: 40px;
-    gap: 50px;
-}
-.container .texto{
-    text-align: center;
-    transition: all 0.4s ease;
-    color: rgb(240, 240, 240);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    gap: 30px;
-    padding: 40px;
-    width: 50%;
-    max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.178);
-    border-radius: 30px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
-.container .single .projeto{
-    transition: all 0.2s ease;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.single .texto:hover{
+    transition: transform 0.2s ease;
+    transform: scale(104%);
+}
+.texto h2{
+    text-align: center;
+}
+.texto p{
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.texto ul{ 
+    list-style-position: inside;
+}
+.single .img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: transform 0.2s ease;
+    border-radius: 20px;
     width: 100%;
-    max-width: 400px;
-    height: 200px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-   background-color: white;
-    background-size: contain;
-    background-repeat: no-repeat;
+    max-width: 450px;
+    height: 250px;
+    background-color: blue;
+    background-image: url('../img/mineirao2.webp');
+    background-size: cover;
     background-position: center;
-    border-radius: 10px;
+}
+.single .img:hover{
+    transition: transform 0.2s ease;
+    transform: scale(104%);
 }
 .r{
     flex-direction: row-reverse;
 }
-/* .filmes .single:hover{
-    transform: translateY(-3px) scale(102%);
-    transition: transform 0.2s ease;
-} */
-.projetos .texto:hover{
-    transform: translateY(-3px) scale(102%);
-    transition: transform 0.2s ease;
-}
-.projeto:hover{
-    transform: translateY(-3px) scale(104%);
-    transition: transform 0.2s ease;
-}
-.texto span{
-    margin: 10px 0;
-}
-.single .texto span a{
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.24);
-    border-radius: 20px;
-    color: white;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
 /*******************************/
 footer{
-    background:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
+    background:linear-gradient(to right,  rgb(26, 43, 170), rgb(20, 66, 164));
     padding: 3% 11%;
     color: rgb(230, 230, 230);
 }
@@ -231,14 +240,22 @@ footer .single:hover{
         display: block;
     }
     /*****************/
-    .projetos{
+    .cruzeiro{
         padding-top: 50px;
+        background:linear-gradient(to right,  rgb(26, 43, 170), rgb(20, 66, 164));
     }
-    .projetos .container .single{
+    .cruzeiro .container .single{
         flex-direction: column;
     }
-    .projetos .container .texto{
+    .single .texto{
         width: 100%;
+        padding: 20px 30px;
+    }
+    .texto h2{
+        text-align: center;
+    }
+    .texto p{
+        font-size: 14px;
         text-align: center;
     }
     /*********/

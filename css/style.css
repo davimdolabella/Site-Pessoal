@@ -8,6 +8,8 @@
 html,body{
     height: 100%;
 }
+/*******************************/
+/*header*/
 header{
     color: white;
     position: absolute;
@@ -87,6 +89,7 @@ header .desktop ul li a{
     transition: 0.2s;
 }
 /*//////////////////////////////////////*/
+/*hero banner*/
 .hero .container{
     color: white;
     background-image: url('../img/banner.jpg');
@@ -117,7 +120,7 @@ header .desktop ul li a{
 }
 
 /***************************************/
-
+/*section about*/
 .about .container{
     background:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
     padding:5% 10%;
@@ -155,6 +158,7 @@ header .desktop ul li a{
     background-color: gray;
 }
 /*****************************************/
+/*section content*/
 .content{
     padding:10%;
     background:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
@@ -187,6 +191,7 @@ header .desktop ul li a{
     transform: scale(105%);
 }
 /***************************************/
+/*section prview*/
 .preview{
     background:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
     height: auto;
@@ -246,6 +251,7 @@ header .desktop ul li a{
     flex-direction: row-reverse;
 }
 /**************************/
+/*footer*/
 footer{
     background:linear-gradient(to right,  rgb(66, 39, 130), rgb(51, 88, 167));
     padding: 3% 10%;
@@ -315,11 +321,11 @@ footer .social{
     .hero_text{
         position: relative;
         bottom: 100px;
-        max-width: 400px;
+        max-width: 500px;
         width: 100%;
-        padding: 20px;
+        padding:40px 20px;
         height: auto;
-        font-size: 110%;
+        font-size: 150%;
         text-align: center;
     }
     /****************************/
@@ -364,5 +370,16 @@ footer .social{
         max-width: 450px;
         text-align: center;
         align-items: center;
+    }
+}
+@media screen and (max-width: 512px){
+    .hero_text{
+        position: relative;
+        bottom: 100px;
+        max-width: 500px;
+        width: 100%;
+        padding:20px;
+        height: auto;
+        font-size: 110%;
     }
 }
